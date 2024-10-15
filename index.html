@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aishly Jain Portfolio</title>
@@ -9,7 +10,8 @@
           href="https://fonts.googleapis.com/css?family=Poppins">
     
      <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-
+     <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
 <body>
 
     <!-- Header Section -->
@@ -31,14 +33,14 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero reveal">
         <img src="profile pic.png" alt="Aishly Jain" class="profile-pic">
         <h2><b>Hi, I'm Aishly</b></h2>
         <p>A UI/UX and Interaction Designer with a passion for crafting intuitive, user-friendly experiences that make technology feel seamless. I believe in designing with empathy, creating experiences that truly understand and meet the needs of real users. I thrive on simplifying complex problems, creating solutions that not only look great but are easy and enjoyable to use.</p>
     </section>
 </div>
 
-<footer class="footer">
+<footer class="footer reveal">
     <div class="footer-container">
         <div class="footer-left">
             <h2>Works</h2>
@@ -56,7 +58,7 @@
 </footer>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section class="projects reveal">
         <div>
             <img src="comfort rides.png" alt="Comfort Rides" class = "phone-image">
            
@@ -74,7 +76,7 @@
             </div> 
         </div>
     </section>
-    <section  class="projects">
+    <section  class="projects reveal">
 
         <div class="project">
             <img src="glide ease.png" alt="Glide Ease">
@@ -89,7 +91,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects reveal">
         <div>
             <img src="RecyclEase.png" alt="RecycleEase" class = "recycle-Ease"><br>
             
@@ -106,7 +108,7 @@
         </div>
     </section>
 
-    <section class = "projects">
+    <section class = "projects reveal">
         <div>
             <img src="Group 7.png" alt="Ember" class="ember"><br>
             <div class="description">
@@ -121,7 +123,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="links">
+    <footer class="links reveal">
         <p>Lets Connect!</p>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/aishly-jain-581671183/"><img src="LinkedIn_logo_initials 1.png" alt="LinkedIn"></a>
@@ -134,7 +136,17 @@
         <p>&copy; 2024 Aishly Jain. All rights reserved.</p>
     </div>
     </footer>
-
+ <!-- ScrollReveal Script -->
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        ScrollReveal().reveal('.reveal', {
+            delay: 200,
+            distance: '50px',
+            duration: 600,
+            origin: 'bottom',
+            easing: 'ease-out',
+        });
+    });
+</script>
 </body>
-</head>
 </html>
