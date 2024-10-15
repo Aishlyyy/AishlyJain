@@ -24,9 +24,10 @@
     color: #7D4DFF;
     font-weight: 60;
 
+
 }
 .random {
-    background-image: url('Rectangle%202.png');
+    background-image: url('Rectangle 2');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,19 +46,34 @@ header {
     border: 2px solid #7D4DFF;
     border-radius: 100px;
 }
+
+.active {
+    color: #7D4DFF; /* Change the color to make it stand out */
+    font-weight: bold; /* Bold to highlight the active section */
+    border-bottom: 2px solid #7D4DFF; /* Add a border to the bottom */
+}
 @font-face {
     font-family: 'CustomFont'; /* Custom name for your font */
     src: url('against\ regular.ttf') format('truetype');
     font-style: normal;
 }
 
+.about-text {
+    color: #512562;
+    font-family: 'Century Gothic';
+    font-size: 32px;
+}
 
+.text {
+    font-size: 24px;
+}
 
 header .logo h1 {
     margin-left: 30px;
     font-size: 24px;
     color: #512562;
     font-family: 'CustomFont', sans-serif;
+    text-decoration: none;
 }
 
 
@@ -81,6 +97,11 @@ header nav ul li a {
     margin: 20px;
 }
 
+.container {padding-left: 255px ;
+    align-items: center;
+    padding-top: 50px;
+
+}
  .about-section {
             background-color: #fff;
             border-radius: 20px;
@@ -90,6 +111,7 @@ header nav ul li a {
             align-items: center;
             display: flex;
             gap: 20px;
+            
         }
 
         .about-text {
@@ -124,18 +146,20 @@ header nav ul li a {
 <div class="random">
     <header>
         <div class="logo">
-            <h1>Aishly Jain</h1>
+            <a href="index.html" style="text-decoration: none;">
+                <h1>Aishly Jain</h1>
+            </a>
         </div>
-    <div class="navlinks">
-        <nav>
-            <ul>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div class="navlinks">
+            <nav>
+                <ul>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" class="active">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
@@ -143,7 +167,8 @@ header nav ul li a {
     <div class="container">
         <div class="about-section">
             <div class="about-text">
-                <h1>Aishly Jain</h1>
+                <h1>About Me</h1>
+            <div class="text">
                 <p>
                     I’m Aishly, a 3rd-year Interaction Design student at PES University. 
                     I’m passionate about creating user-centered experiences that blend creativity 
@@ -153,10 +178,11 @@ header nav ul li a {
                 <p>
                     I love exploring new ideas, whether it’s through design, storytelling, or movement, 
                     and I’m always curious to learn and grow, both personally and professionally.
-                </p>
+                </p> </div>
+            
             </div>
             <div class="profile-pic">
-                <img src="profile-pic.jpg" alt="Aishly's Picture">
+                <img src="About me pfp.jpg" alt="Aishly's Picture">
             </div>
         </div>
     </div>
