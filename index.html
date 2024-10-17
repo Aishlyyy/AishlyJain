@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aishly Jain Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="js.js">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Poppins">
     
@@ -24,8 +25,8 @@
         <nav>
             <ul>
                 <li><a href="#">Resume</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="Works section.html">Works</a></li>
+                <li><a href="https://medium.com/@aishly1606">Blog</a></li>
                 <li><a href="About me page.html">About</a></li>
             </ul>
         </nav>
@@ -49,13 +50,14 @@
         <div class="footer-right">
             <ul class="footer-links">
                 <li><a href="https://www.linkedin.com/in/aishly-jain-581671183/"><img src="social (1).png" alt="LinkedIn" class="footer-icon"> LinkedIn</a></li>
-                <li><a href="#"><img src="medium.png" alt="Medium" class="footer-icon"> Medium</a></li>
+                <li><a href="https://medium.com/@aishly1606"><img src="medium.png" alt="Medium" class="footer-icon"> Medium</a></li>
                 <li><a href="https://www.behance.net/aishlyjain"><img src="social (2).png" alt="Behance" class="footer-icon"> Behance</a></li>
                 <li><a href="#"><img src="resume.png" alt="Resume" class="footer-icon"> Resume</a></li>
             </ul>
         </div>
     
 </footer>
+
 
     <!-- Projects Section -->
     <section class="projects reveal">
@@ -121,7 +123,8 @@
             </div>
         </div>
     </section>
-
+ 
+    <button id="backToTopBtn">↑ Back to Top</button>
     <!-- Footer Section -->
     <footer class="links reveal">
         <p>Lets Connect!</p>
@@ -147,6 +150,33 @@
             easing: 'ease-out',
         });
     });
+
+// Get the button
+const backToTopBtn = document.getElementById('backToTopBtn');
+
+// Show the button when user reaches the bottom of the page
+window.onscroll = function() {
+  // Check if user has scrolled to the bottom
+  if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+    backToTopBtn.classList.add('show');
+    backToTopBtn.classList.remove('hide');
+  } else {
+    backToTopBtn.classList.add('hide');
+    backToTopBtn.classList.remove('show');
+  }
+};
+
+// Scroll back to the top when the button is clicked
+backToTopBtn.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+
 </script>
+
+
 </body>
 </html>
